@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="tip.png">
+    <script src="https://kit.fontawesome.com/6de3383711.js" crossorigin="anonymous"></script>
+    <title>Tip Calculator</title>
+</head>
+<body>
+    <h1 style="text-align: center;color:white;"><b>TIP Calculator</h1> 
+    <div class="mb-5 ml-auto mr-auto" id="alerts">
+        <h5 id="finalResult">Your Tip is XYZ.</h5>
+    </div>
+    <div class="container">
+        <div class="mb-5" style="text-align: center;">
+            <h5>Calculate Tips in Seconds</h5>
+        </div>
+        <div class="mb-4" style="text-align: center;">
+            <input id="tips" type="text" placeholder="Total Amount (in ₹)">
+        </div>
+        <div class="mb-4" style="text-align: center;">
+            <input id="guests" type="text" placeholder="No. Of Guests">
+        </div>
+        <form style="width: 200px; text-align: center;">
+            <select id="options">
+                <option value="" disabled selected>Choose the Service Type</option>
+                <option value="5">5%</option>
+                <option value="10">10%</option>
+                <option value="15">15%</option>
+            </select>
+        </form>
+        <button class="btn btn-dark waves-effect waves-light mt-4" id="calculateBtn">Calculate Tip</button>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
