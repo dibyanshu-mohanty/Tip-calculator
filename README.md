@@ -1,2 +1,3 @@
 # Tip-calculator
-JavaScript Projects 3/15
+
+Project 3 of 15 days , 15 JS Projects
